@@ -1,0 +1,68 @@
+span{
+    color: red;
+}
+div p:nth-last-of-type(2){
+    background-color: aquamarine;
+}
+div p:nth-last-of-type(3n+0){
+    background-color: blueviolet;
+}
+div p:only-of-type{
+    background-color: yellow;
+}
+div p:only-child{
+    background-color: chocolate;
+    color: azure;
+}
+input#a:optional{
+    background-color: #d36e82;
+}
+input#b:required{
+    background-color: crimson;
+}
+input#c:read-only{
+    background-color:  blue;
+}
+input#d:read-write{
+    background-color: darkblue;
+}
+:target{
+    background-color: darkcyan;
+    color: darkorange;
+    padding: 10px;
+}
+.main dic{
+    display: none;
+}
+.main div:target{
+    display: block;
+    background-color: blue;
+    color: navajowhite;
+    padding: 10px;
+}
+div.ele::first-line{
+    color: goldenrod;
+}
+div.ele::first-letter{
+    font-size: 50px;
+    color: darkred;
+}
+span::first-line{
+    color: red;
+}
+p.un::first-letter{
+    background-color: aqua;
+    color: crimson;
+    font-size: 30px;
+}
+h1::before{
+    content: url(images/S.jpg);
+}
+h1::after{
+    content: "I am After";
+    color: skyblue;
+}
+h2::before{
+    content: "I am before";
+    color:pink;
+}
